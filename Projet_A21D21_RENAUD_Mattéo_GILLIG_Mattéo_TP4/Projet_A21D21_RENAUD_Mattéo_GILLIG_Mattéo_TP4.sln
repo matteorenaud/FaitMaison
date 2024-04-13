@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33424.131
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Projet_A21D21_RENAUD_Mattéo_GILLIG_Mattéo_TP4", "Projet_A21D21_RENAUD_Mattéo_GILLIG_Mattéo_TP4.csproj", "{9533B4C9-AC70-4B83-AC88-4EC9E3F21BD3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9533B4C9-AC70-4B83-AC88-4EC9E3F21BD3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9533B4C9-AC70-4B83-AC88-4EC9E3F21BD3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9533B4C9-AC70-4B83-AC88-4EC9E3F21BD3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9533B4C9-AC70-4B83-AC88-4EC9E3F21BD3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7E059CF1-D72A-43DB-8D8B-CFA6323816D8}
+	EndGlobalSection
+EndGlobal

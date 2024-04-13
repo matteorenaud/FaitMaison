@@ -1,0 +1,163 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9533B4C9-AC70-4B83-AC88-4EC9E3F21BD3}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Projet_A21D21_RENAUD_Mattéo_GILLIG_Mattéo_TP4</RootNamespace>
+    <AssemblyName>Projet_A21D21_RENAUD_Mattéo_GILLIG_Mattéo_TP4</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>icone_fait_maison.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemGroup>
+    <Reference Include="Bibliothèque_UserControl_ProjetA21D21_RENAUD_Mattéo_GILLIG_Mattéo_TP4">
+      <HintPath>Bibliothèque_UC\Bibliothèque_UserControl_ProjetA21D21_RENAUD_Mattéo_GILLIG_Mattéo_TP4.dll</HintPath>
+    </Reference>
+    <Reference Include="PdfSharp, Version=1.50.5147.0, Culture=neutral, PublicKeyToken=f94615aa0424f9eb, processorArchitecture=MSIL">
+      <HintPath>packages\PDFsharp.1.50.5147\lib\net20\PdfSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="PdfSharp.Charting, Version=1.50.5147.0, Culture=neutral, PublicKeyToken=f94615aa0424f9eb, processorArchitecture=MSIL">
+      <HintPath>packages\PDFsharp.1.50.5147\lib\net20\PdfSharp.Charting.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frmAccueil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAccueil.Designer.cs">
+      <DependentUpon>frmAccueil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDetailsRecette.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDetailsRecette.Designer.cs">
+      <DependentUpon>frmDetailsRecette.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmNotations.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNotations.Designer.cs">
+      <DependentUpon>frmNotations.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmResultatRecettes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmResultatRecettes.Designer.cs">
+      <DependentUpon>frmResultatRecettes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UCAfficheIngredients.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCAfficheIngredients.Designer.cs">
+      <DependentUpon>UCAfficheIngredients.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCBoutonAffichageIntegraleEtapes.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCBoutonAffichageIntegraleEtapes.Designer.cs">
+      <DependentUpon>UCBoutonAffichageIntegraleEtapes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCIngredientsChoisis.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCIngredientsChoisis.Designer.cs">
+      <DependentUpon>UCIngredientsChoisis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCListeFamille.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCListeFamille.Designer.cs">
+      <DependentUpon>UCListeFamille.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="frmAccueil.resx">
+      <DependentUpon>frmAccueil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDetailsRecette.resx">
+      <DependentUpon>frmDetailsRecette.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNotations.resx">
+      <DependentUpon>frmNotations.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmResultatRecettes.resx">
+      <DependentUpon>frmResultatRecettes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="UCAfficheIngredients.resx">
+      <DependentUpon>UCAfficheIngredients.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCBoutonAffichageIntegraleEtapes.resx">
+      <DependentUpon>UCBoutonAffichageIntegraleEtapes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCIngredientsChoisis.resx">
+      <DependentUpon>UCIngredientsChoisis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCListeFamille.resx">
+      <DependentUpon>UCListeFamille.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="icone_fait_maison.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
